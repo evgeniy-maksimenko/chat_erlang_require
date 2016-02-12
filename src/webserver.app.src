@@ -1,0 +1,29 @@
+{application, webserver,
+ [
+  {description, ""},
+  {vsn, "0.0.8"},
+   {registered, [chat_sup]},
+  {applications, [
+    kernel,
+    stdlib,
+    crypto,
+    asn1,
+    public_key,
+    ssl,
+    sasl,
+    inets,
+    compiler,
+    syntax_tools,
+    ranch,
+    cowlib,
+    cowboy,
+    sync,
+    goldrush,
+    lager,
+    jsx,
+    eredis,
+    poolboy
+  ]},
+  {mod, { webserver_app, []}},
+  {env, []}
+ ]}.
